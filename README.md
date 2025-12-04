@@ -8,18 +8,17 @@ Helper for invoking AL events or making JS/TS functions available for AL Control
 
 ## How to Call Functions from AL code
 The template supports making functions public to be callable from the BC ControlAddIn. For this you need to follow these steps:
-1. Import ALHelper class `import ALHelper from 'utils/ALHelper';`
-2. Have a function that you want to make accessible for AL Code:
+1. Have a function that you want to make accessible for AL Code:
     ```javascript
     function someGlobalFunction() {
         window.alert('Hello from the control add-in!');
     }
     ```
-3. Make that function accessible using the `ALHelper` class:
+2. Make that function accessible using the `ALHelper` class:
     ```javascript
     ALHelper.makeFunctionAccessible(someGlobalFunction);
     ```
-4. In the ControlAddIn of your BC Project, define the Function *(Note that first letter is capital)*:
+3. In the ControlAddIn of your BC Project, define the Function *(Note that first letter is capital)*:
     ```c#
     controladdin "PTE ReactTSBC"
     {
@@ -28,7 +27,7 @@ The template supports making functions public to be callable from the BC Control
         procedure SomeGlobalFunction();
     }
     ```
-5. Call the procedure like you would normally do using the ControlAddIn
+4. Call the procedure like you would normally do using the ControlAddIn
 
 ## How to call an AL Event from React
 The template supports calling Events that are defined in the ControlAddIn file in the BC Project. For this you need to follow these steps:
