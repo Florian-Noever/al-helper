@@ -1,0 +1,27 @@
+{
+  "name": "al-helper",
+  "version": "1.0.0",
+  "description": "Helper for invoking AL functions / nevents from JS/TS",
+  "type": "module",
+  "main": "dist/ALHelper.js",
+  "module": "dist/ALHelper.js",
+  "types": "dist/ALHelper.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "al",
+    "dynamics",
+    "nav",
+    "helper"
+  ],
+  "author": "Florian Noever",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
