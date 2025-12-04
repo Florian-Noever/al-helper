@@ -20,9 +20,9 @@ The template supports making functions public to be callable from the BC Control
     ```
 3. In the ControlAddIn of your BC Project, define the Function *(Note that first letter is capital)*:
     ```c#
-    controladdin "PTE ReactTSBC"
+    controladdin "PTE MyControlAddIn"
     {
-        Scripts = './addins/react-bc.bundle.js';
+        Scripts = './addins/myproject.js';
 
         procedure SomeGlobalFunction();
     }
@@ -33,14 +33,14 @@ The template supports making functions public to be callable from the BC Control
 The template supports calling Events that are defined in the ControlAddIn file in the BC Project. For this you need to follow these steps:
 1. Add the event you want to the ControlAddIn in your BC Project:
     ```c#
-    controladdin "PTE ReactTSBC"
+    controladdin "PTE MyControlAddIn"
     {
-        Scripts = './addins/react-bc.bundle.js';
+        Scripts = './addins/myproject.js';
 
         event OnControlReady(Message: Text; CurrDateTime: Text);
     }
     ```
-2. Invoke the event in the React Project:
+2. Invoke the event in your Project:
     ```javascript
     const datetime = new Date(Date.now());
     ALHelper.invokeEvent('OnControlReady', 'Control Ready Event. Time: ', datetime.toLocaleTimeString());
