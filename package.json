@@ -1,6 +1,6 @@
 {
   "name": "@floriannoever/bc-controladdin-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helper for invoking AL events for a controladdin from JS/TS",
   "type": "module",
   "main": "dist/ALHelper.js",
@@ -14,7 +14,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "echo \"No tests specified\""
   },
   "keywords": [
     "al",
