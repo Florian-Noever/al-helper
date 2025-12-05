@@ -3,7 +3,7 @@ Helper for invoking AL events or making JS/TS functions available for AL Control
 
 ## How to use the package
 1. Install via `npm install --save @floriannoever/bc-controladdin-helper`
-2. Import the ALHelper class `import ALHelper from 'bc-controladdin-helper';`
+2. Import the ALHelper class `import ALHelper from '@floriannoever/bc-controladdin-helper';`
 3. Use the available function as mentioned below
 
 ## How to Call Functions from AL code
