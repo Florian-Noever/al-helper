@@ -1,7 +1,7 @@
 {
-  "name": "al-helper",
+  "name": "@floriannoever/bc-controladdin-helper",
   "version": "1.0.0",
-  "description": "Helper for invoking AL functions / nevents from JS/TS",
+  "description": "Helper for invoking AL events for a controladdin from JS/TS",
   "type": "module",
   "main": "dist/ALHelper.js",
   "module": "dist/ALHelper.js",
